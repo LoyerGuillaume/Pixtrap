@@ -17,6 +17,7 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
         this.myPlayer.init(100, this.stage.height / 2);
         this.stage.addChild(this.myPlayer.sprite);
 
+
         this.createMonsters(10);
 
         if (this.requestAnimFrame) {
@@ -72,10 +73,10 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
     }
 
     Main.prototype.getCollision = function () {
-        var pX = this.myPlayer.sprite.position.x;
-        var pY = this.myPlayer.sprite.position.y;
-        var pWidth = this.myPlayer.sprite.width;
-        var pHeight = this.myPlayer.sprite.height;
+        var pX      = this.myPlayer.sprite.position.x;
+        var pY      = this.myPlayer.sprite.position.y;
+        var pWidth  = this.myPlayer.width;
+        var pHeight = this.myPlayer.height;
 
         for (var i = 0; i < this.listMonster.length; i++) {
             var aMonster = this.listMonster[i];
@@ -85,11 +86,12 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
             var mHeight = aMonster.sprite.height;
 
             if(isCollision(pX, pY, pWidth, pHeight, mX, mY, mWidth, mHeight)) {
+
+                /*this.debugHitBox();*/
                 aMonster.onCollision();
                 this.myPlayer.onCollision();
             }
         }
-        //Collision entre le player et le monstre
     }
 
     var isCollision = function (x1, y1, w1, h1, x2, y2, w2, h2) {
@@ -97,6 +99,28 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
                 x1 - w1 / 2 <= x2 + w2 / 2 &&
                 y1 + h1 / 2 >= y2 - h2 / 2 &&
                 y1 - h1 / 2 <= y2 + h2 / 2);
+    }
+
+    Main.prototype.debugHitBox = function() {
+        // create a new graphics object
+        var graphics = new PIXI.Graphics();
+
+        // begin a green fill..
+        graphics.beginFill(0x00FF00);
+
+        // draw a triangle using lines
+        graphics.moveTo(this.myPlayer.sprite.x,this.myPlayer.sprite.y);
+        graphics.lineTo(this.myPlayer.sprite.x - this.myPlayer.width / 2,this.myPlayer.sprite.y - this.myPlayer.height / 2);
+        graphics.lineTo(this.myPlayer.sprite.x + this.myPlayer.width / 2,this.myPlayer.sprite.y - this.myPlayer.height / 2);
+        graphics.lineTo(this.myPlayer.sprite.x + this.myPlayer.width / 2,this.myPlayer.sprite.y + this.myPlayer.height / 2);
+        graphics.lineTo(this.myPlayer.sprite.x - this.myPlayer.width / 2,this.myPlayer.sprite.y + this.myPlayer.height / 2);
+        graphics.lineTo(this.myPlayer.sprite.x - this.myPlayer.width / 2,this.myPlayer.sprite.y - this.myPlayer.height / 2);
+
+        // end the fill
+        graphics.endFill();
+
+        // add it the stage so we see it on our screens..
+        this.stage.addChild(graphics);
     }
 
 

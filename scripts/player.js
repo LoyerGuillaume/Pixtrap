@@ -3,16 +3,18 @@ function (PIXI) {
 
 	function Player (pMain) {
 		this.myMain = pMain;
+		this.defaultHeight = this.height = 20;
+		this.defaultWidth  = this.width = 20;
 	}
 
 	Player.prototype.init = function (pX, pY) {
-        var myPlayerTexture = PIXI.Texture.fromImage("assets/img/kirby.png");
-        this.sprite = new PIXI.TilingSprite(myPlayerTexture, 20, 20);
-        this.sprite.position.x  = pX;
-        this.sprite.position.y  = pY;
-        this.sprite.anchor.x = 0.5;
-        this.sprite.anchor.y = 0.5;
-        this.sprite.interactive = true;
+		var myPlayerTexture     = PIXI.Texture.fromImage("assets/img/kirby.png");
+		this.sprite             = new PIXI.TilingSprite(myPlayerTexture, this.height, this.width);
+		this.sprite.position.x  = pX;
+		this.sprite.position.y  = pY;
+		this.sprite.anchor.x    = 0.5;
+		this.sprite.anchor.y    = 0.5;
+		this.sprite.interactive = true;
 
 	}
 
@@ -30,7 +32,9 @@ function (PIXI) {
 	}
 
 	Player.prototype.onCollision = function () {
-        this.sprite.scale.x = this.sprite.scale.y += 0.5;
+		this.sprite.scale.x = this.sprite.scale.y += 0.5;
+		this.height         += this.defaultHeight * 0.5;
+		this.width          += this.defaultWidth * 0.5;
 	}
 
 	return Player;
