@@ -8,7 +8,7 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
 	Main.prototype.init = function () {
 		this.initPixi();
 
-        this.mouseControl = new MouseControl(this.stage, {defaultPositionMouse : {x : 100 , y : this.stage.height / 2}});
+        this.mouseControl = new MouseControl(this, this.stage, {defaultPositionMouse : {x : 100 , y : this.stage.height / 2}});
 
         this.backgroundScrolling = new BackgroundScrolling();
         this.backgroundScrolling.init(this.stage);

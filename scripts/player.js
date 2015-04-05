@@ -37,5 +37,11 @@ function (PIXI) {
 		this.width          += this.defaultWidth * 0.5;
 	}
 
+	Player.prototype.setDefaultSize = function () {
+		this.height = this.defaultHeight;
+		this.width  = this.defaultWidth;
+		this.sprite.scale.x = this.sprite.scale.y = 1;
+	}
+
 	return Player;
 });

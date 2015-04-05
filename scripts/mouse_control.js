@@ -1,7 +1,8 @@
 define(["pixi"],
 function (PIXI) {
 
-	function MouseControl(pStage, params) {
+	function MouseControl(pMain, pStage, params) {
+		this.myMain = pMain;
 		params = params || {};
 		this.myStage = pStage;
 		this.positionMouse =  {
@@ -16,6 +17,10 @@ function (PIXI) {
 		this.myStage.mousemove = function (data) {
             _this.positionMouse = data.getLocalPosition(this);
         };
+
+        this.myStage.mouseup = function (data) {
+        	_this.myMain.myPlayer.setDefaultSize();
+        }
 	}
 
 
