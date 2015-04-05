@@ -23,27 +23,14 @@ function (PIXI) {
             x : - this.sprite.position.x + this.myMain.mouseControl.positionMouse.x ,
             y : - this.sprite.position.y + this.myMain.mouseControl.positionMouse.y
         }
-        if(this.sprite.position.x <= 200 || this.myMain.mouseControl.positionMouse.x <= 200){
+/*        if(this.sprite.position.x <= 200 || this.myMain.mouseControl.positionMouse.x <= 200){
             this.sprite.position.x += diffPosition.x * 0.2;
-        }
+        }*/
         this.sprite.position.y += diffPosition.y * 0.2;
+	}
 
-
-
-        //Collision entre le player et le monstre
-        var xP = this.sprite.position.x;
-        var yP = this.sprite.position.y;
-        var xM = this.myMain.myMonster.sprite.position.x;
-        var yM = this.myMain.myMonster.sprite.position.y;
-        if(xP + this.sprite.width / 2 >= xM - this.myMain.myMonster.sprite.width / 2 &&
-           xP - this.sprite.width / 2 <= xM + this.myMain.myMonster.sprite.width / 2 &&
-          yP + this.sprite.height/ 2 >= yM - this.myMain.myMonster.sprite.height/ 2 &&
-          yP - this.sprite.height/ 2 <= yM + this.myMain.myMonster.sprite.height/ 2) {
-            this.myMain.stage.removeChild(this.myMain.myMonster.sprite);
-            this.myMain.myMonster.sprite.position.x = -100;
-            this.sprite.scale.x = this.sprite.scale.y += 0.5;
-            console.log("CATCH");
-        }
+	Player.prototype.onCollision = function () {
+        this.sprite.scale.x = this.sprite.scale.y += 0.5;
 	}
 
 	return Player;
