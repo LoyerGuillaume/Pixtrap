@@ -46,6 +46,12 @@ function ($, PIXI) {
         };
         stage.addChild(myPlayer);
 
+        var monsterTexture = PIXI.Texture.fromImage("assets/img/monster.png");
+        monster = new PIXI.TilingSprite(monsterTexture, 24, 24);
+        monster.position.x = 1000;
+        monster.position.y = 50;
+        stage.addChild(monster);
+
         stage.interactive = true;
         stage.buttonMode = true;
         stage.defaultCursor = "none";
@@ -56,19 +62,35 @@ function ($, PIXI) {
 	var update = function () {
 		renderer.render(stage);
 
+        // Scrolling du fond
         farBg.tilePosition.x -= 0.128;
 		midBd.tilePosition.x -= 0.64;
 
 
+        //Deplacement du joueur en fonction de la souris
         var diffPosition = {
             x : - myPlayer.position.x + positionMouse.x ,
             y : - myPlayer.position.y + positionMouse.y
         }
-
         if(myPlayer.position.x <= 200 || positionMouse.x <= 200){
             myPlayer.position.x += diffPosition.x * 0.2;
         }
-            myPlayer.position.y += diffPosition.y * 0.2;
+        myPlayer.position.y += diffPosition.y * 0.2;
+
+        //Deplacement du monstre
+        monster.position.x -= 5;
+
+        //Collision entre le player et le monstre
+        if(myPlayer.position.x + myPlayer.width / 2 >= monster.position.x - monster.width / 2 &&
+           myPlayer.position.x - myPlayer.width / 2 <= monster.position.x + monster.width / 2 &&
+           myPlayer.position.y + myPlayer.height/ 2 >= monster.position.y - monster.height/ 2 &&
+           myPlayer.position.y - myPlayer.height/ 2 <= monster.position.y + monster.height/ 2) {
+            stage.removeChild(monster);
+            monster.position.x = -100;
+            myPlayer.scale.x = myPlayer.scale.y += 0.1;
+            console.log("CATCH");
+        }
+
 
 
 		requestAnimFrame(update);
