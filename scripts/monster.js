@@ -1,12 +1,18 @@
 define(["jquery", "pixi"],
 function ($, PIXI) {
 
-	function Monster(pMain) {
+	var spriteResource = {
+		'malus' : 'assets/img/monster.png',
+		'bonus' : 'assets/img/monster2.png'
+	};
+
+	function Monster(pMain, pType) {
 		this.myMain = pMain;
+		this.typeOfMonster = pType;
 	}
 
 	Monster.prototype.init = function (pX, pY) {
-        var monsterTexture = PIXI.Texture.fromImage("assets/img/monster.png");
+        var monsterTexture = PIXI.Texture.fromImage(spriteResource[this.typeOfMonster]);
         this.sprite = new PIXI.TilingSprite(monsterTexture, 24, 24);
         this.sprite.position.x = pX;
         this.sprite.position.y = pY;
@@ -14,7 +20,7 @@ function ($, PIXI) {
 
 	Monster.prototype.update = function () {
         //Deplacement du monstre
-        this.sprite.position.x -= 5;
+        this.sprite.position.x -= 3;
 	}
 
 	Monster.prototype.onCollision = function () {

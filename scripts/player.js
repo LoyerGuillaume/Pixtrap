@@ -31,7 +31,15 @@ function (PIXI) {
         this.sprite.position.y += diffPosition.y * 0.2;
 	}
 
-	Player.prototype.onCollision = function () {
+	Player.prototype.onCollision = function (pMonster) {
+		if (pMonster.typeOfMonster == "malus") {
+			this.setDefaultSize();
+		} else {
+			this.setIncreaseSize();
+		}
+	}
+
+	Player.prototype.setIncreaseSize = function () {
 		this.sprite.scale.x = this.sprite.scale.y += 0.5;
 		this.height         += this.defaultHeight * 0.5;
 		this.width          += this.defaultWidth * 0.5;

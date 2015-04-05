@@ -32,7 +32,6 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
         this.stage.interactive = true;
         this.stage.buttonMode = true;
         this.stage.defaultCursor = "none";
-
     };
 
     Main.prototype.requestAnimFrame = (
@@ -65,7 +64,7 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
 
     Main.prototype.createMonsters = function (pNbrMonster) {
         for (var i = 0; i < pNbrMonster; i++) {
-            var monster = new Monster(this);
+            var monster = new Monster(this, Math.round(Math.random() * 2) == 0 ? 'malus' : 'bonus');
             monster.init(Math.round(Math.random() * 1000 + 300), Math.round(Math.random() * 500) );
             this.stage.addChild(monster.sprite);
             this.listMonster.push(monster);
@@ -89,7 +88,7 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
 
                 /*this.debugHitBox();*/
                 aMonster.onCollision();
-                this.myPlayer.onCollision();
+                this.myPlayer.onCollision(aMonster);
             }
         }
     }
