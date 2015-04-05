@@ -1,12 +1,7 @@
 require.config({
 	paths : {
-		"jquery" : "../script/ext_libs/jquery-2.1.1.min",
-		"pixi" : "../script/ext_libs/pixi.dev.js"
-	},
-	shim : {
-		"jquery" : {
-			exports : "$"
-		}
+		"jquery" : "../scripts/ext_libs/jquery-2.1.1.min",
+		"pixi" : "../scripts/ext_libs/pixi.dev"
 	}
 
 /*	urlArgs : "bust=" + (new Date()).getTime()*/
