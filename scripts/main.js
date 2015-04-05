@@ -3,6 +3,7 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
 
 	function Main() {
         this.listMonster = [];
+        this.frameCount = 0;
 	}
 
 	Main.prototype.init = function () {
@@ -26,11 +27,11 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
 	};
 
 	Main.prototype.initPixi = function () {
-		this.stage = new PIXI.Stage(0x66FF99);
-		this.renderer = new PIXI.autoDetectRenderer(1032, 384, {view : document.getElementById("game-canvas")});
+        this.stage               = new PIXI.Stage(0x66FF99);
+        this.renderer            = new PIXI.autoDetectRenderer(1032, 384, {view : document.getElementById("game-canvas")});
 
-        this.stage.interactive = true;
-        this.stage.buttonMode = true;
+        this.stage.interactive   = true;
+        this.stage.buttonMode    = true;
         this.stage.defaultCursor = "none";
     };
 
@@ -46,6 +47,7 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
      )();
 
 	Main.prototype.update = function () {
+        this.frameCount ++;
 		this.renderer.render(this.stage);
 
         this.backgroundScrolling.update();
@@ -79,10 +81,10 @@ function ($, PIXI, BackgroundScrolling, Player, MouseControl, Monster) {
 
         for (var i = 0; i < this.listMonster.length; i++) {
             var aMonster = this.listMonster[i];
-            var mX = aMonster.sprite.position.x;
-            var mY = aMonster.sprite.position.y;
-            var mWidth = aMonster.sprite.width;
-            var mHeight = aMonster.sprite.height;
+            var mX       = aMonster.sprite.position.x;
+            var mY       = aMonster.sprite.position.y;
+            var mWidth   = aMonster.sprite.width;
+            var mHeight  = aMonster.sprite.height;
 
             if(isCollision(pX, pY, pWidth, pHeight, mX, mY, mWidth, mHeight)) {
 

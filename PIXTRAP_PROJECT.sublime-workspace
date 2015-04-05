@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"sc",
+				"scaleUp"
+			],
+			[
+				"defau",
+				"defaultScale"
+			],
+			[
+				"sprite",
+				"spriteResource"
+			],
+			[
+				"width",
+				"width"
+			],
+			[
+				"position",
+				"positionMouse"
+			],
+			[
+				"monster",
+				"monster"
+			],
+			[
+				"posi",
+				"position"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"new",
+				"newPosition"
+			],
+			[
+				"ren",
+				"renderer"
+			],
+			[
+				"far",
+				"farBg"
+			],
+			[
+				"fa",
+				"farBg"
+			],
+			[
 				"key",
 				"keycode"
 			],
@@ -387,6 +435,54 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/D/Dev/GIT_HUB/pixi.js/examples/example 3 - MovieClip/index.html",
+			"settings":
+			{
+				"buffer_size": 2092,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Dev/GIT_HUB/pixi.js/examples/example 3 - MovieClip/SpriteSheet.json",
+			"settings":
+			{
+				"buffer_size": 6172,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Dev/GIT_HUB/pixi.js/examples/example 2 - SpriteSheet/fighter.json",
+			"settings":
+			{
+				"buffer_size": 6591,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Dev/GIT_HUB/pixi.js/examples/example 20 - Strip/index.html",
+			"settings":
+			{
+				"buffer_size": 1795,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Dev/GIT_HUB/pixi.js/examples/example 25 - Video/index.html",
+			"settings":
+			{
+				"buffer_size": 2796,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Dev/GIT_HUB/Pixtrap/scripts/main.js",
+			"settings":
+			{
+				"buffer_size": 4605,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -424,6 +520,26 @@
 	},
 	"file_history":
 	[
+		"/D/Dev/GIT_HUB/pixi.js/examples/example 24 - Box2D Integration/index.html",
+		"/D/Dev/GIT_HUB/pixi-parallax-scroller/tutorial-1/index.html",
+		"/D/Dev/GIT_HUB/Pixtrap/scripts/app.js",
+		"/D/DEV/GIT_HUB/Pixtrap/style/style.css",
+		"/D/DEV/GIT_HUB/Pixtrap/scripts/background_scrolling.js",
+		"/D/DEV/GIT_HUB/Pixtrap/index.html",
+		"/D/DEV/GIT_HUB/Pixtrap/scripts/mouse_control.js",
+		"/D/DEV/GIT_HUB/Pixtrap/scripts/monster.js",
+		"/D/DEV/GIT_HUB/Pixtrap/scripts/player.js",
+		"/D/DEV/GIT_HUB/Pixtrap/scripts/main.js",
+		"/D/Dev/TOXICODE/git_toxicode/toxilibs/libs/event_capabilities.js",
+		"/D/Dev/TOXICODE/git_toxicode/toxilibs/libs/code_editor_capabilities.js",
+		"/D/Dev/TOXICODE/git_toxicode/toxilibs/libs/app_history.js",
+		"/D/Dev/SVN/SVN_SOKOBAN/Sokoban/JS/main.js",
+		"/D/Dev/SVN/SVN_SOKOBAN/Sokoban/JS/app.js",
+		"/D/Dev/TOXICODE/git_toxicode/toxilibs/libs/timer.js",
+		"/D/Dev/TOXICODE/git_toxicode/toxilibs/libs/input_emitter.js",
+		"/D/Dev/TOXICODE/git_toxicode/toxilibs/libs/multidimensional_optimizer.js",
+		"/D/Dev/TOXICODE/git_toxicode/toxilibs/libs/2D_rigid_body_physics.js",
+		"/D/Dev/SVN/SVN_SOKOBAN/Sokoban/index.php",
 		"/C/Users/Guillaume/Desktop/git_toxicode/bot_arena/ship_test/scripts/ship.js",
 		"/C/Users/Guillaume/Desktop/git_toxicode/bot_arena/public/js_challenges/space.js",
 		"/C/Users/Guillaume/Desktop/git_toxicode/bot_arena/public/js_challenges/ship.js",
@@ -531,27 +647,7 @@
 		"/C/Users/Guillaume/Desktop/git_toxicode/bot_arena/app/assets/stylesheets/application.css",
 		"/C/Users/Guillaume/Desktop/git_toxicode/bot_arena/app/views/challenges/_controls.html.haml",
 		"/C/Users/Guillaume/Desktop/git_toxicode/bot_arena/app/controllers/robot_actions_controller.rb",
-		"/C/Users/Guillaume/Desktop/git_toxicode/bot_arena/app/assets/javascripts/ui/time_slider.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/bot_arena/app/assets/javascripts/server_or_client_lib.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/bot_arena/bin/bundle",
-		"/C/Users/Guillaume/Desktop/git_toxicode/toxilibs/libs/google_analytics.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/toxilibs/libs/advanced_button.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/toxilibs/specs/event_capabilities_specs.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/toxilibs/specs/advanced_button_specs.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/toxilibs/libs/gap_beetwen.js",
-		"/C/Users/Guillaume/AppData/Roaming/Skype/My Skype Received Files/mocha_it.sublime-snippet",
-		"/C/Users/Guillaume/Desktop/git_toxicode/toxilibs/specs/gap_beetwen_specs.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/learning-engine-master/learning-engine-master/public/scripts/modules/gravityEngine.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/learning-engine-master/learning-engine-master/public/scripts/modules/add_canvasBoundingBox.js",
-		"/C/Ruby200/include/ruby-2.0.0/ruby/win32.h",
-		"/C/Users/Guillaume/Desktop/git_toxicode/learning-engine-master/learning-engine-master/public/scripts/modules/chrono.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/toxilibs/specs/code_explorer_specs.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/toxilibs/libs/toxi_pixi.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/toxilibs/libs/timer.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/codeNSlash/app/assets/javascripts/toxilibs_locked/advanced_button.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/codeNSlash/app/assets/javascripts/toxilibs_locked/ace_custom_javascript.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/toxilibs/libs/define_proxy.js",
-		"/C/Users/Guillaume/Desktop/git_toxicode/codeNSlash/app/assets/javascripts/toxilibs_locked/define_proxy.js"
+		"/C/Users/Guillaume/Desktop/git_toxicode/bot_arena/app/assets/javascripts/ui/time_slider.js"
 	],
 	"find":
 	{
@@ -571,6 +667,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"debugHitBox",
+			"myPlayer.y",
+			"player",
+			"this.sprite.width",
+			"xP",
+			" this.sprite.position.y",
+			"this.myMain.myMonster.sprite.position.x",
+			"this.sprite.position.x",
+			"yM",
+			"monster",
+			"myPlayer",
+			"monster",
+			"}\n",
+			"sprite",
+			"myPlayer",
+			"positionMouse",
+			"mySprite",
+			"myPlayer",
+			"midBd",
+			"farBg",
+			"256",
+			"diffPosition",
+			"512",
+			"mid",
 			"false",
 			"true",
 			"applyForces",
@@ -674,31 +794,7 @@
 			"buttonConnexion",
 			"labelLogin",
 			"uncli",
-			"unclicka",
-			"color",
-			"shopScreen",
-			"energy",
-			"_this",
-			"initUnlockSkin",
-			"skin",
-			"Skin",
-			"skin",
-			"LABEL_SKIN_SELECTED",
-			"assetPlayer",
-			"assetP",
-			"border-radius",
-			"TitleCard",
-			"wav",
-			"energyCrystal",
-			"this",
-			"\"",
-			"winScreen",
-			"energy",
-			"loadLvlUnlocked",
-			"loginUser",
-			"_this",
-			"else ",
-			"getCell"
+			"unclicka"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -716,8 +812,465 @@
 	"groups":
 	[
 		{
+			"selected": 5,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/D/Dev/GIT_HUB/pixi.js/examples/example 3 - MovieClip/index.html",
+					"settings":
+					{
+						"buffer_size": 2092,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1141,
+								1141
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Dev/GIT_HUB/pixi.js/examples/example 3 - MovieClip/SpriteSheet.json",
+					"settings":
+					{
+						"buffer_size": 6172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								482
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4140.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Dev/GIT_HUB/pixi.js/examples/example 2 - SpriteSheet/fighter.json",
+					"settings":
+					{
+						"buffer_size": 6591,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5051,
+								5051
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3420.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Dev/GIT_HUB/pixi.js/examples/example 20 - Strip/index.html",
+					"settings":
+					{
+						"buffer_size": 1795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								920,
+								926
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/Dev/GIT_HUB/pixi.js/examples/example 25 - Video/index.html",
+					"settings":
+					{
+						"buffer_size": 2796,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								435,
+								472
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/Dev/GIT_HUB/Pixtrap/scripts/main.js",
+					"settings":
+					{
+						"buffer_size": 4605,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1213,
+								1213
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

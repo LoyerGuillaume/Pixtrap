@@ -2,8 +2,8 @@ define(["pixi"],
 function (PIXI) {
 
 	function MouseControl(pMain, pStage, params) {
-		this.myMain = pMain;
-		params = params || {};
+		this.myMain  = pMain;
+		params       = params || {};
 		this.myStage = pStage;
 		this.positionMouse =  {
 			x : 0,
