@@ -19,12 +19,12 @@ function ($, PIXI) {
 
 
 		var farTexture = PIXI.Texture.fromImage("assets/img/bg-far.png");
-		farBg = new PIXI.TilingSprite(farTexture, 1032, 256);
-		farBg.position.x = 0;
-		farBg.position.y = 0;
-		farBg.tilePosition.x = 0;
-		farBg.tilePosition.y = 0;
-		stage.addChild(farBg);
+		this.farBg = new PIXI.TilingSprite(farTexture, 1032, 256);
+		this.farBg.position.x = 0;
+		this.farBg.position.y = 0;
+		this.farBg.tilePosition.x = 0;
+		this.farBg.tilePosition.y = 0;
+		stage.addChild(this.farBg);
 
         var midTexture = PIXI.Texture.fromImage("assets/img/bg-mid.png");
         midBd = new PIXI.TilingSprite(midTexture, 1032, 256);
@@ -56,14 +56,27 @@ function ($, PIXI) {
         stage.buttonMode = true;
         stage.defaultCursor = "none";
 
-        requestAnimFrame(update);
+        if (this.requestAnimFrame) {
+            this.requestAnimFrame.call(window,this.update.bind(this));
+        }
     };
 
-	var update = function () {
+    Main.prototype.requestAnimFrame = (
+        function(){ 
+            return window.requestAnimationFrame
+             || window.webkitRequestAnimationFrame
+             || window.mozRequestAnimationFrame
+             || window.oRequestAnimationFrame
+             || window.msRequestAnimationFrame
+             || null
+        }
+     )();
+
+	Main.prototype.update = function () {
 		renderer.render(stage);
 
         // Scrolling du fond
-        farBg.tilePosition.x -= 0.128;
+        this.farBg.tilePosition.x -= 0.128;
 		midBd.tilePosition.x -= 0.64;
 
 
@@ -93,7 +106,9 @@ function ($, PIXI) {
 
 
 
-		requestAnimFrame(update);
+        if (this.requestAnimFrame) {
+            this.requestAnimFrame.call(window,this.update.bind(this));
+        }
 	};
 
 
