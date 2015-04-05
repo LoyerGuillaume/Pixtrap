@@ -10,5 +10,7 @@ require.config({
 require(["main"], function(Main){
 	var myMain   = new Main();
 
+	myMain.init();
+
 	return myMain;
 })
